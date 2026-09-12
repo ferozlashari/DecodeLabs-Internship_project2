@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
+
+backend/outputs/*
+!backend/outputs/.gitkeep
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env

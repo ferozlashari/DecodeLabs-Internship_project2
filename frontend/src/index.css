@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #12151b;
+  --panel: #1b2028;
+  --panel-raised: #20262f;
+  --border: #2a303b;
+  --text: #e7e9ee;
+  --text-dim: #9399a6;
+  --text-faint: #5c6472;
+
+  --accent: #e8a33d;
+  --accent-dim: #a97b34;
+
+  --status-cancelled: #e15252;
+  --status-delivered: #4fb286;
+  --status-pending: #d9c25a;
+  --status-returned: #7a8ff0;
+  --status-shipped: #4fb0d9;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+a {
+  color: var(--accent);
+}
+
+::selection {
+  background: var(--accent-dim);
+  color: #12151b;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
